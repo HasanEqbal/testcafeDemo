@@ -12,4 +12,6 @@ jobs:
       - name: Install TestCafe from 'npm' and Run Tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome test\ScreenShots.js"
+          args: "chrome test"
+
+
