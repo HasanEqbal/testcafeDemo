@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/drvic10k/bootstrap-sortable/ff650fd1/Contents/bootstrap-sortable.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/drvic10k/bootstrap-sortable/ff650fd1/Scripts/bootstrap-sortable.js"></script>
+    <script src="https://cdn.rawgit.com/drvic10k/bootstrap-sortable/ff650fd1/Scripts/moment.min.js"></script>
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+
+      .thumbImg {
+        width: 100%;
+        max-width: 35px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-bottom: 5px;
+        border-width: 1px;
+        border-color: #f1f1f1;
+        border-style: solid;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .closeModal {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .closeModal:hover,
+      .closeModal:focus {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <span class="closeModal">&times;</span>
+      <img class="modal-content" id="modelImage">
+    </div>
+    <div class="container">
+
+      <h1 class="text-primary">TestCafe Test Summary</h1>
+      <div class="client-logo" style="padding:15px"></div>
+      <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
+        <h3>Summary</h3><br>
+        <p class="lead">Start Time: Sun Feb 06 2022 15:39:54 GMT+0530 (India Standard Time)</p>
+        <p class="lead">Browsers: Chrome 98.0.4758.81 / Windows 10, Firefox 95.0 / Windows 10</p>
+        <p class="lead">Duration: 40s</p>
+        <p class="lead">Tests Failed: 1 out of 4</p>
+        <p class="lead">Tests Skipped: 0</p>
+      </div><br>
+      <table class="table sortable" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fixture</th>
+            <th>Test Name</th>
+            <th>Browsers</th>
+            <th>Duration</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr class="success">
+  <td>1</td>
+  <td>First Fixture</td>
+  <td>First Test</td>
+  <td>Chrome 98.0.4758.81 / Windows 10, Firefox 95.0 / Windows 10</td>
+  <td>12s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="success">
+  <td>2</td>
+  <td>First Fixture</td>
+  <td>Second Test</td>
+  <td>Chrome 98.0.4758.81 / Windows 10, Firefox 95.0 / Windows 10</td>
+  <td>5s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="success">
+  <td>3</td>
+  <td>First Fixture</td>
+  <td>Third Test</td>
+  <td>Chrome 98.0.4758.81 / Windows 10, Firefox 95.0 / Windows 10</td>
+  <td>8s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="danger">
+  <td>4</td>
+  <td>First Fixture</td>
+  <td>Fourth Test</td>
+  <td>Chrome 98.0.4758.81 / Windows 10, Firefox 95.0 / Windows 10</td>
+  <td>16s</td>
+  <td><a href="#test-4">failed</a></td>
+ </tr>
+
+        </tbody>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+      </table>
+      <br>
+      <h3>Error Details</h3>
+       <h4 id="test-4" style="color: red;">4. First Fixture - Fourth Test&nbsp;&nbsp;<img class="thumbImg" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAH0AAAAmCAYAAADpyZQRAAAAAklEQVR4AewaftIAAATZSURBVO3BTUhbBwDA8X/fAj5i6cMNEljxMYWEIr61h7yVYloGT3owddDEDkzNqB8wnZfZgq056PSgzaDTg62B1eWQNtJNc6jVg/UdOtJTchELKwYU3qBgYEgGlvTUWbt+uO7SzcPT936/A8+3JJNJnj59yurqKrb9qbq6GqfTSSQSwZFMJnE6nTQ2NmLb33RdJ5lMImxubqJpGrb9T9M0Njc3EdbW1rBZx9raGgI2yxGwWY6AzXIEbJYjYLMcAZvlCNgsx4EZFZeZ+WmCxJTOw3wBqMTXUE9z12Xa/G7e1/rMeY50wM3Htwm52X3ZUSpOD9G/sEGPypYiKzNXyXhHaFMwHQGzMWZo/+wUHfEcoj/M8PAww9/WI+XnuNR4ijOjWUqY3Poigx1xiiVMyYGplMgkoqQJcvP+JCGZ17oGBsgMnqFxKEY6NE1YxjzUHjY2etgrPqirq/vu5MmTmMMfZH+McffjS3zfVsNB3iYiV4tk4j9T1L4iUC1CdpSK2nE8rSFqDvJGdpSK2nE8rSFqDsLmb2nG78IXX8o8iJ6l5UIv4+kcTz48hlrzESIvrDNzvpI6Q6PLcZfusy1c6O0nlSviOuan5qMnzPW109L9Nb3jafKOY3yuHkZkS3aUitoGyrQrnHgySsXxS+SBB8kYsVgZ2pUTHMYcMpkMDkzFjddfC2Pz6Cv1hL0SO8hh7m2E+W9yRJta8AQHuD7roqjHiXYcJ2f8ymyPgsjf5qM0JVw0DFynVTRIjV2io/0ZD72LrLiuMDzZSVGPE42epl1aYjoss4M3wOytP7naMoZ8bZaw14UXc3FgMkrrDYb1JrqPf8KgRyMQCKJpCopPQRb5HwooA0tMh2W2+etRPU0c7b7KXPg2ITcv5Vx0Lt0mJLPNJ+WZaoyTrV/g/oCKyBa/l2fZo3Try6yHZdy8RfLi99UiAR7Fj1/FdByYjajQNb1EMDtHeipNeqabxBjbKrVOBoavEPJKvL9mWgMyb5P9zTTQwXxunVCAlxqCqDKviWUuXqhvUBF5RcajAisl9iIHpiTiVkN0qSG6gFLRIJ9ZZGIiRsfxHMbCLD2qyPvx4JLYSZbxAWmjALh4pYx3HeIfDrFnCewBoiSjBNq4cW+a/tocQ3GddXaPJElYiYCZLE/waUUFfZkS/07GqwClEm8YFArssF54xLt+p1hkJ8MgB3hdElYiYCYehZAL4oMxFtd5R2llhtQU1Pq9uNkiitTyiGWjyBsGmVSadyVILBq8USI7E2eeZjRVwkocmIno5/KtfjKnhzh3JIVHCxDQPLgokNfnmNPzFHz9LLQqbFP8hH0QvdiOu9SJJhXJJgaZF4PUUWInH4X4Gc4bA7SqIkZqgtiUQfDmJAGJ3SVKuIH0VArlmQ/V70XCPByYjKj2cP+xSmosRSq3yFg0wQuVvgYC137gcpsfN68odE0vQF+UiY5zjFX6aO6aZDpg8E06zU4NDE8qpC9G6R7KgydI5y836KmX2XWSn9ZrQTKxbs4lgtx6PEnAjWkc6O3tfd7X14fNGkZGRhCwWY6AzXIEbJYjYLMcAZvlCNgsR8BmOQI2yxGwWY6AzXKEqqoqbNZRVVWFUF5ejq7r2PY/XdcpLy/HEYlESCaT3Llzh9XVVWz7U3V1NU6nk0gkwl9QOJWelVt1zwAAAABJRU5ErkJggg=="/>&nbsp;&nbsp;<img class="thumbImg" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAH0AAAAmCAYAAADpyZQRAAAAAklEQVR4AewaftIAAAUXSURBVO3Bf0hTCQDA8W+PQc356+XRi9xwwY1Fi3RPzAu8Mtj1W5w/yk5O1g/wnyF1IUoQY0gERhAhdrVD1DqEI7vbE66VJ/mE0iSy+uOC4R/90Lq6C9ZMm/91Pe4GEf1xPzx4be/zWfTmLQxpxcRfYrE4Y2N3mJp6SiIxjyE1ZGQswWZbwfr1Mrm52WhMvPXixUsU5SqlpTIulxOzeTGG1JBIzDMzM8ulS5epqtrK0qW5CLFYnIGBq1RUfMGyZXmYzYsxpA6zeQmS9AkVFZv54YcrxOOvEMbH77JunRtD6istdTM2dgfh0aMnZGVlYUh92dlZPH78BCGRmMdsXowh9ZnNS3j9OoGAIe0IGNKOgCHtCBjSjoAh7QikOFUdRpLyUNVhDH8yoVPh8I+cO/cNExO30VgsmZSUlLB9+w58vn3ohaoOU1dXiywXE4kMopGkPGS5mEhkED0yoUO9vd20tDQjSctpaPCRnZ3N9PQUQ0NDqOowPt8+9CInJwdZLsblWsPHwoTOxGIxWlqakaTljIxcRxRFkmKxGK2tzeiJ2y0TiQzyMTGhM/fu3UVTW7sLURR5lyiKhEJdaFR1mLq6Wvz+JgKBIO+SpDz8/iYCgSBJL1++pK0tSE9PN3NzszgcDjo6zuB2y2i2bduMprX1CEePHmFychJJWk5b2zG83ira2oL09HQzNzdLefkmzp79FlEU0UhSHrJcTCQyiCTloZmYuI0k5aGR5WIikUH0QkBn7HY7mv7+i8RiMRbK4cOH6O+/SHV1DQ0NPp4+/ZWamioePnxAUjQapa6ultWrXfj9TczOznL48CEaGw/Q33+RvXv3UV6+CVUdprW1mQ/x+5vQSNJy/P4m/P4m9uz5Ej0xoTN2+0oqK70oSpiNG8vYvHkLZWWfU1RUhN2+kn/L4/EQCnWRtHNnBXV1tRw/foxQqIukK1d+xu2W0RQUFNDS0kw8Hmdk5DqiKKIpK/uMoaEhPiQQCNLZ2UF+fj6BQBA9MqFDoVAXVquN/v6LXLjQy4ULvWgcDgcdHWdwu2X+qfr6r3hXefkmLJZM7t//hSSn04nbLZNUUGBH43KtQRRFkrKyspmbm+RjZUKnAoEggUCQhw8fMDKicuPGdRQlTE1NFdeuqSwEp9PJxMRt0o0JnbPbV2K3r8Tn24fVaqOzs4Pz53vZsGEjC8FiySTdCHxENmzYSFJhYRH/VTQaxel0km4EdEZVh2lrCxKLxXhfX993aNauLUQURTRjY6O8q7e3m7/j9OlTzM3NsnXrNhaaxZLJq1cz6JUJHers7KCnp5uSkhJcrjVoBgevMDk5SXn5JrzeKjSVlV4UJUxj4wGsVhtjY6NEo1E+ZP/+vXg8HqxWG9PTUyhKGIfDwcGDX7PQPB4PihKmsfEAVquN6ekpQqEu9MKEzhQWFnHixEkuX/6JW7duoarDaBwOB35/E4FAkKT29pNoFCWMprLSS1/f96xa9Snvq66u4ebNURQljMWSSWWll/b2k/wf2ttPEo/HUZQwmoYGH3qy6NSprjf19V4M6aGvL4yAIe0IGNKOgCHtCBjSjoAh7QgY0o6QkbGERGIeQ+pLJObJyDAj2Gz5zMzMYkh98fgr7PZ8hPXr3YyP38GQ+m7enKC01I2Qm5tNdfUWBgYGef78NxKJeQypI5GY59mz31GUq+zevYOcnCxMvLV0aS67du1gdHSCqak7vH6dwJAaMjLMFBSsYPfuneTkZKH5A4kIsl9BFDD5AAAAAElFTkSuQmCC"/></h4>
+ <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The specified selector does not match any element in the DOM tree.
+
+ &gt; | Selector(&#39;#submit-buttons&#39;)
+
+Browser: Chrome 98.0.4758.81 / Windows 10
+
+   61 |(&quot;Fourth Test&quot;, async t =&gt;&#123
+   62 |    await t
+   63 |        .typeText(&quot;#developer-name&quot;,&quot;TAU&quot;)
+   64 |        .click(&quot;#macos&quot;)
+   65 |        .takeElementScreenshot(&quot;#submit-button&quot;)
+ &gt; 66 |        .click(&quot;#submit-buttons&quot;)
+   67 |        .takeScreenshot();
+   68 |&#125);
+
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:66:10)
+   at asyncGeneratorStep (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:114)
+   at _next (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:452)
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:617)
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:358)
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:55:1) </pre><br> <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The specified selector does not match any element in the DOM tree.
+
+ &gt; | Selector(&#39;#submit-buttons&#39;)
+
+Browser: Firefox 95.0 / Windows 10
+
+   61 |(&quot;Fourth Test&quot;, async t =&gt;&#123
+   62 |    await t
+   63 |        .typeText(&quot;#developer-name&quot;,&quot;TAU&quot;)
+   64 |        .click(&quot;#macos&quot;)
+   65 |        .takeElementScreenshot(&quot;#submit-button&quot;)
+ &gt; 66 |        .click(&quot;#submit-buttons&quot;)
+   67 |        .takeScreenshot();
+   68 |&#125);
+
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:66:10)
+   at asyncGeneratorStep (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:114)
+   at _next (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:452)
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:617)
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:1:358)
+   at &lt;anonymous&gt; (D:\POC&#39;s\TestCafe_POC\test\ScreenShots.js:55:1) </pre><br>
+    </div>
+    <script>
+      const modal = document.getElementById('myModal');
+      const modalImage = document.getElementById("modelImage");
+
+      Array.from(document.getElementsByClassName("thumbImg")).forEach(function(el) {
+        el.onclick = function() {
+          modal.style.display = "block";
+          modalImage.src = this.src;
+        }
+      });
+
+      document.getElementsByClassName("closeModal")[0].onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+  <br>
+</html>

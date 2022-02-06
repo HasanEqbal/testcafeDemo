@@ -1,0 +1,86 @@
+{
+  "uid" : "ff22d5444841bf08",
+  "name" : "Fourth Test",
+  "fullName" : "First Fixture.Fourth Test",
+  "historyId" : "38f91094aff6b930cd0931757c8ebe2a",
+  "time" : {
+    "start" : 1644154963967,
+    "stop" : 1644154982336,
+    "duration" : 18369
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "This test has been broken",
+  "statusTrace" : "The specified selector does not match any element in the DOM tree.\n                \n                 > | Selector('#submit-buttons')\n                \n                Browser: Chrome 98.0.4758.81 / Windows 10\n                Screenshot: D:\\POC's\\TestCafe_POC\\report\\screenshots\\2022-02-06_19-11-52\\test-4\\Chrome_98.0.4758.81_Windows_10\\errors\\1.png\n                \n                   61 |(\"Fourth Test\", async t =>{\n                   62 |    await t\n                   63 |        .typeText(\"#developer-name\",\"TAU\")\n                   64 |        .click(\"#macos\")\n                   65 |        .takeElementScreenshot(\"#submit-button\")\n                 > 66 |        .click(\"#submit-buttons\")\n                   67 |        .takeScreenshot();\n                   68 |});\n                \n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:66:10)\n                   at asyncGeneratorStep (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:114)\n                   at _next (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:452)\n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:617)\n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:358)\n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:55:1)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "This test has been broken",
+    "statusTrace" : "The specified selector does not match any element in the DOM tree.\n                \n                 > | Selector('#submit-buttons')\n                \n                Browser: Chrome 98.0.4758.81 / Windows 10\n                Screenshot: D:\\POC's\\TestCafe_POC\\report\\screenshots\\2022-02-06_19-11-52\\test-4\\Chrome_98.0.4758.81_Windows_10\\errors\\1.png\n                \n                   61 |(\"Fourth Test\", async t =>{\n                   62 |    await t\n                   63 |        .typeText(\"#developer-name\",\"TAU\")\n                   64 |        .click(\"#macos\")\n                   65 |        .takeElementScreenshot(\"#submit-button\")\n                 > 66 |        .click(\"#submit-buttons\")\n                   67 |        .takeScreenshot();\n                   68 |});\n                \n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:66:10)\n                   at asyncGeneratorStep (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:114)\n                   at _next (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:452)\n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:617)\n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:1:358)\n                   at <anonymous> (D:\\POC's\\TestCafe_POC\\test\\ScreenShots.js:55:1)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3b6b509de65acde7",
+      "name" : "Screenshot",
+      "source" : "3b6b509de65acde7.png",
+      "type" : "image/png",
+      "size" : 152217
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test run id or identifier"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "First Fixture"
+  }, {
+    "name" : "suite",
+    "value" : "First Fixture"
+  }, {
+    "name" : "testClass",
+    "value" : "First Fixture"
+  }, {
+    "name" : "testMethod",
+    "value" : "Fourth Test"
+  }, {
+    "name" : "package",
+    "value" : "First Fixture"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "JIRA Story Link",
+    "value" : "https://jira.nisum.com/browse/12344"
+  }, {
+    "name" : "JIRA Test Link",
+    "value" : "https://jira.nisum.com/secure/Tests.jspa#/testCase/4"
+  }, {
+    "name" : "User Agent",
+    "value" : "test run id or identifier"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff22d5444841bf08.json",
+  "parameterValues" : [ "https://jira.nisum.com/browse/12344", "https://jira.nisum.com/secure/Tests.jspa#/testCase/4", "test run id or identifier" ]
+}

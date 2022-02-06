@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1644155039900' stop='1644155039925'>
+    <name>First Fixture</name>
+    <title>First Fixture</title>
+    <test-cases>
+        <test-case start='1644155039900' status='failed' stop='1644155052623'>
+            <name>Fourth Test</name>
+            <title>Fourth Test</title>
+            <labels>
+                <label name='feature' value='test run id or identifier'/>
+                <label name='story' value='First Fixture'/>
+                <label name='severity' value='blocker'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='test run id or identifier'/>
+                <parameter kind='argument' name='JIRA Story Link' value='https://jira.nisum.com/browse/12344'/>
+                <parameter kind='argument' name='JIRA Test Link' value='https://jira.nisum.com/secure/Tests.jspa#/testCase/4'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='cd2bce55-d901-4307-a8c8-c4565df5af35-attachment.png' type='image/png' size='135594'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('#submit-buttons')
+                
+                Browser: Chrome 98.0.4758.81 / Windows 10
+                Screenshot: D:\POC's\TestCafe_POC\report\screenshots\2022-02-06_19-13-12\test-4\Chrome_98.0.4758.81_Windows_10\errors\1.png
+                
+                   61 |("Fourth Test", async t =>{
+                   62 |    await t
+                   63 |        .typeText("#developer-name","TAU")
+                   64 |        .click("#macos")
+                   65 |        .takeElementScreenshot("#submit-button")
+                 > 66 |        .click("#submit-buttons")
+                   67 |        .takeScreenshot();
+                   68 |});
+                
+                   at &lt;anonymous> (D:\POC's\TestCafe_POC\test\ScreenShots.js:66:10)
+                   at asyncGeneratorStep (D:\POC's\TestCafe_POC\test\ScreenShots.js:1:114)
+                   at _next (D:\POC's\TestCafe_POC\test\ScreenShots.js:1:452)
+                   at &lt;anonymous> (D:\POC's\TestCafe_POC\test\ScreenShots.js:1:617)
+                   at &lt;anonymous> (D:\POC's\TestCafe_POC\test\ScreenShots.js:1:358)
+                   at &lt;anonymous> (D:\POC's\TestCafe_POC\test\ScreenShots.js:55:1)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

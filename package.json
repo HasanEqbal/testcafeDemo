@@ -1,0 +1,19 @@
+{
+  "name": "testcafe_poc",
+  "version": "1.0.0",
+  "description": "testcafe poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome test/assertionsTest.js",
+    "multipleBrowsers": "testcafe chrome,firefox test/assertionsTest.js",
+    "allBrowsers": "testcafe all test/assertionsTest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "testcafe": "^1.17.1",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}

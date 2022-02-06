@@ -1,0 +1,126 @@
+{
+  "uid" : "8872ed8fe15bb464",
+  "name" : "Third Test",
+  "fullName" : "First Fixture.Third Test",
+  "historyId" : "54bd5e67bc0c37eacbebfa73cb7dd7e",
+  "time" : {
+    "start" : 1644155026619,
+    "stop" : 1644155040987,
+    "duration" : 14368
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "This test has been passed.",
+  "statusTrace" : "no error",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 4,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test run id or identifier"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "First Fixture"
+  }, {
+    "name" : "suite",
+    "value" : "First Fixture"
+  }, {
+    "name" : "testClass",
+    "value" : "First Fixture"
+  }, {
+    "name" : "testMethod",
+    "value" : "Third Test"
+  }, {
+    "name" : "package",
+    "value" : "First Fixture"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "JIRA Story Link",
+    "value" : "https://jira.nisum.com/browse/12343"
+  }, {
+    "name" : "JIRA Test Link",
+    "value" : "https://jira.nisum.com/secure/Tests.jspa#/testCase/3"
+  }, {
+    "name" : "User Agent",
+    "value" : "test run id or identifier"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "f92c197151173b92",
+      "status" : "passed",
+      "statusDetails" : "This test has been passed.",
+      "time" : {
+        "start" : 1644154945038,
+        "stop" : 1644154957991,
+        "duration" : 12953
+      }
+    }, {
+      "uid" : "b1b21f3943b43890",
+      "status" : "passed",
+      "statusDetails" : "This test has been passed.",
+      "time" : {
+        "start" : 1644154838269,
+        "stop" : 1644154854955,
+        "duration" : 16686
+      }
+    }, {
+      "uid" : "88c099aea1984181",
+      "status" : "passed",
+      "statusDetails" : "This test has been passed.",
+      "time" : {
+        "start" : 1644154751320,
+        "stop" : 1644154762138,
+        "duration" : 10818
+      }
+    }, {
+      "uid" : "bddb55f3df7b12dd",
+      "status" : "passed",
+      "statusDetails" : "This test has been passed.",
+      "time" : {
+        "start" : 1644153642688,
+        "stop" : 1644153650053,
+        "duration" : 7365
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "667ec477fc9ade5a",
+        "status" : "passed",
+        "statusDetails" : "This test has been passed.",
+        "time" : {
+          "start" : 1644153642688,
+          "stop" : 1644153650053,
+          "duration" : 7365
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8872ed8fe15bb464.json",
+  "parameterValues" : [ "https://jira.nisum.com/browse/12343", "https://jira.nisum.com/secure/Tests.jspa#/testCase/3", "test run id or identifier" ]
+}

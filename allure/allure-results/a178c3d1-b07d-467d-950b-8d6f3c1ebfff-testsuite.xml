@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1644155026619' stop='1644155026620'>
+    <name>First Fixture</name>
+    <title>First Fixture</title>
+    <test-cases>
+        <test-case start='1644155026619' status='passed' stop='1644155040987'>
+            <name>Third Test</name>
+            <title>Third Test</title>
+            <labels>
+                <label name='feature' value='test run id or identifier'/>
+                <label name='story' value='First Fixture'/>
+                <label name='severity' value='blocker'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='test run id or identifier'/>
+                <parameter kind='argument' name='JIRA Story Link' value='https://jira.nisum.com/browse/12343'/>
+                <parameter kind='argument' name='JIRA Test Link' value='https://jira.nisum.com/secure/Tests.jspa#/testCase/3'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

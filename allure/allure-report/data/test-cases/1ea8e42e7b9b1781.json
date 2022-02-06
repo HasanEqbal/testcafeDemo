@@ -1,0 +1,68 @@
+{
+  "uid" : "1ea8e42e7b9b1781",
+  "name" : "First Test",
+  "fullName" : "First Fixture.First Test",
+  "historyId" : "e5c5def8f55faf71825456a7bd7cb90e",
+  "time" : {
+    "start" : 1644154732182,
+    "stop" : 1644154743240,
+    "duration" : 11058
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "This test has been passed.",
+  "statusTrace" : "no error",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test run id or identifier"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "First Fixture"
+  }, {
+    "name" : "suite",
+    "value" : "First Fixture"
+  }, {
+    "name" : "testClass",
+    "value" : "First Fixture"
+  }, {
+    "name" : "testMethod",
+    "value" : "First Test"
+  }, {
+    "name" : "package",
+    "value" : "First Fixture"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "JIRA Story Link",
+    "value" : "https://jira.nisum.com/browse/12341"
+  }, {
+    "name" : "JIRA Test Link",
+    "value" : "https://jira.nisum.com/secure/Tests.jspa#/testCase/1"
+  }, {
+    "name" : "User Agent",
+    "value" : "test run id or identifier"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1ea8e42e7b9b1781.json",
+  "parameterValues" : [ "https://jira.nisum.com/browse/12341", "https://jira.nisum.com/secure/Tests.jspa#/testCase/1", "test run id or identifier" ]
+}

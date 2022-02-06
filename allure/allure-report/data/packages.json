@@ -1,0 +1,77 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "First Fixture",
+    "children" : [ {
+      "name" : "First Test",
+      "uid" : "3d19966b5a0ced87",
+      "parentUid" : "db649fd8fd1d96e9e07824755e257f28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644155003668,
+        "stop" : 1644155013615,
+        "duration" : 9947
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : false,
+      "parameters" : [ "https://jira.nisum.com/browse/12341", "https://jira.nisum.com/secure/Tests.jspa#/testCase/1", "test run id or identifier" ]
+    }, {
+      "name" : "Second Test",
+      "uid" : "42270a6cf9fee28f",
+      "parentUid" : "db649fd8fd1d96e9e07824755e257f28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644155011706,
+        "stop" : 1644155019188,
+        "duration" : 7482
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : false,
+      "parameters" : [ "https://jira.nisum.com/browse/12342", "https://jira.nisum.com/secure/Tests.jspa#/testCase/2", "test run id or identifier" ]
+    }, {
+      "name" : "Third Test",
+      "uid" : "8872ed8fe15bb464",
+      "parentUid" : "db649fd8fd1d96e9e07824755e257f28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644155026619,
+        "stop" : 1644155040987,
+        "duration" : 14368
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : false,
+      "parameters" : [ "https://jira.nisum.com/browse/12343", "https://jira.nisum.com/secure/Tests.jspa#/testCase/3", "test run id or identifier" ]
+    }, {
+      "name" : "Fourth Test",
+      "uid" : "d02732dc6d5aa452",
+      "parentUid" : "db649fd8fd1d96e9e07824755e257f28",
+      "status" : "failed",
+      "time" : {
+        "start" : 1644155039900,
+        "stop" : 1644155052623,
+        "duration" : 12723
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : false,
+      "parameters" : [ "https://jira.nisum.com/browse/12344", "https://jira.nisum.com/secure/Tests.jspa#/testCase/4", "test run id or identifier" ]
+    } ],
+    "uid" : "db649fd8fd1d96e9e07824755e257f28"
+  } ]
+}
