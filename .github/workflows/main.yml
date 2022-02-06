@@ -2,11 +2,11 @@
 
 name: TestCafe work flow
 
-on:[push]
+on: [push]
 
 jobs:
-  name: Run Testcafe tests
   build:
+    name: Run Testcafe tests
     runs-on: ubuntu-latest
     
     steps:
