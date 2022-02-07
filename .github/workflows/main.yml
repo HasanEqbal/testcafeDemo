@@ -13,4 +13,4 @@ jobs:
       - name: install testcafe and run
       - uses: DevExpress/testcafe-action@latest
    with:
-      args: "chrome test"
+      args: "chrome test/ScreenShots.js"
