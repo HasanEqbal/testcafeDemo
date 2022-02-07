@@ -5,12 +5,12 @@ name: TestCafe work flow
 on:[push]
 
 jobs:
-  name: Run Testcafe tests
   build:
+    name: Run TestCafe Tests
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: install testcafe and run
-      - uses: DevExpress/testcafe-action@latest
-   with:
-      args: "chrome test"
+      - uses: actions/checkout@v1
+      - name: Install TestCafe from 'npm' and Run Tests
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "chrome test"
