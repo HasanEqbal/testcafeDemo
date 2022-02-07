@@ -63,6 +63,6 @@ test.meta({
         .typeText("#developer-name","TAU")
         .click("#macos")
         .takeElementScreenshot("#submit-button")
-        .click("#submit-buttons")
+        .click("#submit-button")
         .takeScreenshot();
 });
